@@ -6,6 +6,7 @@ describe('API Functions', () => {
     vi.stubGlobal('fetch', vi.fn());
   });
 
+  
   it('getPokemonByName returns data on successful fetch', async () => {
     const mockData = { name: 'pikachu', id: 25 };
     (fetch as any).mockResolvedValue({
