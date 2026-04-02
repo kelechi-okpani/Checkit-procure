@@ -46,26 +46,6 @@ To ensure a Lighthouse score of ≥ 90 and satisfy the assessment requirements, 
 * **Fixed Aspect Ratios:** Image containers use `aspect-square` to reserve space in the DOM before the images hydrate, ensuring a CLS score of near zero.
 
 ---
-
-## 📂 Project Architecture
-
-```text
-├── app/
-│   ├── pokemon/[name]/     # Server-side detail route
-│   ├── layout.tsx          # Global providers and fonts
-│   ├── loading.tsx         # Global high-fidelity skeleton UI
-│   ├── error.tsx           # Graceful error boundaries
-│   └── page.tsx            # Main search & listing logic
-├── components/
-│   ├── organisms/          # FilterBar, Pagination, Breadcrumbs
-│   ├── utility/            # TypeScript Interfaces
-│   └── PokemonCard.tsx     # Specialized LCP-optimized card
-└── lib/
-    └── api.ts              # Fetch logic with caching headers
-```
-
----
-
 ## 🔧 Installation & Setup
 
 1.  **Clone the repository:**
@@ -86,10 +66,3 @@ To ensure a Lighthouse score of ≥ 90 and satisfy the assessment requirements, 
     ```
 
 ---
-
-## 📝 Engineering Principles
-
-* **Type Safety:** Explicit interfaces (`PokemonDetail`, `PokemonListItem`) are used throughout to eliminate the use of `any`.
-* **Graceful Degredation:** Implemented `notFound()` for invalid Pokémon queries and `error.tsx` for API failures.
-* **URL as State:** Filtering and pagination are driven by the URL, allowing users to share specific search results or page numbers.
-* **Accessibility:** High-contrast text colors (`text-slate-950`) and semantic HTML tags ensure the site is navigable for all users.
