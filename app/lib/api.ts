@@ -1,6 +1,7 @@
 import { PokemonDetail, PokemonListItem } from "@/components/utility/types";
 
-const BASE_URL = 'https://pokeapi.co/api/v2';
+const BASE_URL = process.env.NEXT_PUBLIC_POKEAPI_URL ||  'https://pokeapi.co/api/v2';
+
 
 export async function getPokemonByName(name: string): Promise<PokemonDetail | null> {
   try {
