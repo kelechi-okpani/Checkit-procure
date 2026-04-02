@@ -2,7 +2,6 @@ export default function GlobalLoading() {
   return (
     <div className="min-h-screen bg-slate-50 p-6 md:p-12 lg:p-16">
       <div className="max-w-7xl mx-auto space-y-12">
-        
      
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
           <div className="space-y-4">
@@ -16,8 +15,6 @@ export default function GlobalLoading() {
               <div className="h-4 w-full max-w-md bg-slate-200/70 animate-pulse rounded-lg" />
             </div>
           </div>
-
-       
           <div className="w-full lg:max-w-xl flex gap-3">
             <div className="flex-1 h-12 bg-white border border-slate-200 animate-pulse rounded-2xl" />
             <div className="w-32 md:w-48 h-12 bg-white border border-slate-200 animate-pulse rounded-2xl" />
