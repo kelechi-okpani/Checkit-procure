@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest",
-   "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:build": "npx @cloudflare/next-on-pages --legacy-peer-deps",
     "pages:preview": "npm run pages:build && wrangler pages dev .vercel/output"
   },
   "dependencies": {
