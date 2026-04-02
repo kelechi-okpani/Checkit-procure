@@ -12,7 +12,6 @@ describe('API Functions', () => {
       ok: true,
       json: () => Promise.resolve(mockData),
     });
-
     const result = await getPokemonByName('pikachu');
     expect(result).toEqual(mockData);
   });
@@ -23,3 +22,5 @@ describe('API Functions', () => {
     expect(result).toBeNull();
   });
 });
+
+
